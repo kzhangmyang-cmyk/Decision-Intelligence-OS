@@ -22,7 +22,7 @@ export function SideRail() {
               <Sparkles className="h-5 w-5" />
             </div>
             <div>
-              <div className="text-sm font-medium text-white">Astrological Decision Simulator</div>
+              <div className="text-sm font-medium text-white">Astrolabe Decision Simulator</div>
               <div className="text-xs uppercase tracking-[0.26em] text-slate-500">Symbolic Console</div>
             </div>
           </div>

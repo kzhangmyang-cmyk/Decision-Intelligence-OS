@@ -296,7 +296,7 @@ export function IntakeWorkbench() {
               <Input
                 value={draft.projectName}
                 onChange={(event) => updateField("projectName", event.target.value)}
-                placeholder="Astrological Decision Simulator"
+                placeholder="Astrolabe Decision Simulator"
               />
             </IntakeField>
 

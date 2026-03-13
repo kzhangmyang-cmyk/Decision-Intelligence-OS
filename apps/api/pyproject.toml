@@ -3,9 +3,9 @@ requires = ["setuptools>=68.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "astrological-decision-simulator-backend"
+name = "astrolabe-decision-simulator-backend"
 version = "0.1.0"
-description = "Astrological Decision Simulator Backend"
+description = "Astrolabe Decision Simulator Backend"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [

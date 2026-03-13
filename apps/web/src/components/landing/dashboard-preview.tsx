@@ -28,7 +28,7 @@ export function DashboardPreview() {
         <CardHeader className="flex flex-row items-center justify-between space-y-0 border-b border-white/8 pb-5">
           <div>
             <div className="text-xs uppercase tracking-[0.28em] text-cyan-200/70">Simulation Overview</div>
-            <CardTitle className="mt-2 text-2xl tracking-[-0.04em]">100 Astrological Worldlines</CardTitle>
+            <CardTitle className="mt-2 text-2xl tracking-[-0.04em]">100 Astrolabe Worldlines</CardTitle>
           </div>
           <div className="rounded-full border border-cyan-300/15 bg-cyan-300/10 px-3 py-1 text-xs text-cyan-100">
             replay-ready

@@ -33,7 +33,7 @@ class Settings(BaseSettings):
         case_sensitive=False,
     )
 
-    app_name: str = Field(default="Astrological Decision Simulator Backend", alias="APP_NAME")
+    app_name: str = Field(default="Astrolabe Decision Simulator Backend", alias="APP_NAME")
     environment: Literal["local", "development", "staging", "production"] = Field(
         default="local",
         alias="ENVIRONMENT",

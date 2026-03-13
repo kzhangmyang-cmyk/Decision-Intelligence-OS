@@ -140,8 +140,8 @@ $whiteBrush = New-Object System.Drawing.SolidBrush([System.Drawing.Color]::FromA
 $mutedBrush = New-Object System.Drawing.SolidBrush([System.Drawing.Color]::FromArgb(255, 160, 178, 197))
 $accentBrush = New-Object System.Drawing.SolidBrush([System.Drawing.Color]::FromArgb(255, 110, 231, 255))
 
-$graphics.DrawString("ASTROLOGICAL WORLDLINE ENGINE", $eyebrowFont, $cyanBrush, 84, 92)
-$graphics.DrawString("Astrological", $titleFont, $whiteBrush, 82, 138)
+$graphics.DrawString("ASTROLABE WORLDLINE ENGINE", $eyebrowFont, $cyanBrush, 84, 92)
+$graphics.DrawString("Astrolabe", $titleFont, $whiteBrush, 82, 138)
 $graphics.DrawString("Decision Simulator", $titleFont, $whiteBrush, 82, 194)
 
 $subtitleRect = [System.Drawing.RectangleF]::new(84, 272, 480, 120)
@@ -177,7 +177,7 @@ foreach ($card in $loopCards) {
   $stroke.Dispose()
 }
 
-$graphics.DrawString("100 Astrological Worldlines", $cardTitleFont, $whiteBrush, 686, 110)
+$graphics.DrawString("100 Astrolabe Worldlines", $cardTitleFont, $whiteBrush, 686, 110)
 $summaryRect = [System.Drawing.RectangleF]::new(686, 152, 470, 60)
 $graphics.DrawString("Symbolic branching. Replayable timing paths.", $bodyFontCompact, $mutedBrush, $summaryRect)
 
@@ -201,8 +201,8 @@ foreach ($metric in $metricCards) {
 
 $chartFill = New-Object System.Drawing.SolidBrush([System.Drawing.Color]::FromArgb(62, 11, 20, 37))
 $chartStroke = New-Object System.Drawing.Pen([System.Drawing.Color]::FromArgb(48, 114, 224, 255), 1.0)
-Fill-RoundedRectangle -Graphics $graphics -Brush $chartFill -X 686 -Y 360 -Width 344 -Height 168 -Radius 26
-Draw-RoundedRectangle -Graphics $graphics -Pen $chartStroke -X 686 -Y 360 -Width 344 -Height 168 -Radius 26
+Fill-RoundedRectangle -Graphics $graphics -Brush $chartFill -X 686 -Y 360 -Width 328 -Height 168 -Radius 26
+Draw-RoundedRectangle -Graphics $graphics -Pen $chartStroke -X 686 -Y 360 -Width 328 -Height 168 -Radius 26
 $graphics.DrawString("Path divergence", $eyebrowFont, $cyanBrush, 708, 382)
 
 $linePen = New-Object System.Drawing.Pen([System.Drawing.Color]::FromArgb(255, 104, 234, 255), 4)
@@ -223,13 +223,13 @@ foreach ($point in $linePoints) {
 
 $judgeFill = New-Object System.Drawing.SolidBrush([System.Drawing.Color]::FromArgb(80, 14, 28, 48))
 $judgeStroke = New-Object System.Drawing.Pen([System.Drawing.Color]::FromArgb(52, 114, 224, 255), 1.1)
-Fill-RoundedRectangle -Graphics $graphics -Brush $judgeFill -X 1048 -Y 360 -Width 148 -Height 168 -Radius 26
-Draw-RoundedRectangle -Graphics $graphics -Pen $judgeStroke -X 1048 -Y 360 -Width 148 -Height 168 -Radius 26
-$graphics.DrawString("Judge verdict", $eyebrowFont, $cyanBrush, 1068, 382)
-$judgeHeadlineRect = [System.Drawing.RectangleF]::new(1068, 420, 110, 36)
-$judgeBodyRect = [System.Drawing.RectangleF]::new(1068, 458, 110, 54)
-$graphics.DrawString("Wait, don't rush.", $smallFont, $whiteBrush, $judgeHeadlineRect)
-$graphics.DrawString("Ask the next chart question first", $smallFont, $mutedBrush, $judgeBodyRect)
+Fill-RoundedRectangle -Graphics $graphics -Brush $judgeFill -X 1032 -Y 360 -Width 164 -Height 168 -Radius 26
+Draw-RoundedRectangle -Graphics $graphics -Pen $judgeStroke -X 1032 -Y 360 -Width 164 -Height 168 -Radius 26
+$graphics.DrawString("Judge verdict", $eyebrowFont, $cyanBrush, 1050, 382)
+$judgeHeadlineRect = [System.Drawing.RectangleF]::new(1050, 420, 128, 36)
+$judgeBodyRect = [System.Drawing.RectangleF]::new(1050, 458, 128, 54)
+$graphics.DrawString("Pause.", $smallFont, $whiteBrush, $judgeHeadlineRect)
+$graphics.DrawString("Read one more chart first.", $smallFont, $mutedBrush, $judgeBodyRect)
 
 $bitmap.Save($outputPath, [System.Drawing.Imaging.ImageFormat]::Png)
 

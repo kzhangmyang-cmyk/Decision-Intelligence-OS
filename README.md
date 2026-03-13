@@ -1,8 +1,8 @@
 <p align="center">
-  <img src=".github/assets/social-preview.png" alt="Astrological Decision Simulator social preview" width="100%" />
+  <img src=".github/assets/social-preview.png" alt="Astrolabe Decision Simulator social preview" width="100%" />
 </p>
 
-<h1 align="center">Astrological Decision Simulator</h1>
+<h1 align="center">Astrolabe Decision Simulator</h1>
 
 <p align="center">
   <strong>Assess symbolic signals. Simulate 100 worldlines. Turn uncertainty into action.</strong>
@@ -14,7 +14,7 @@
 
 ## What This Is
 
-Astrological Decision Simulator is not a generic horoscope chatbot and not a static chart viewer.
+Astrolabe Decision Simulator is not a generic horoscope chatbot and not a static chart viewer.
 
 It is a structured decision simulator designed to answer three questions in order:
 
@@ -34,7 +34,7 @@ It is a structured decision simulator designed to answer three questions in orde
 
 - Most astrology tools stop at interpretation. They do not compare alternative paths under constraints.
 - Real decisions are rarely blocked by lack of symbolism. They are blocked by messy signals, competing interpretations, and no replayable decision structure.
-- Astrological Decision Simulator is built to compress symbolic uncertainty into something you can inspect, compare, and act on.
+- Astrolabe Decision Simulator is built to compress symbolic uncertainty into something you can inspect, compare, and act on.
 
 ## Architecture At A Glance
 

@@ -19,7 +19,7 @@ export function HeroCommandCenter() {
             <div>
               <div className="text-xs uppercase tracking-[0.3em] text-cyan-200/70">Worldline Control</div>
               <div className="mt-2 text-2xl font-semibold tracking-[-0.04em] text-white">
-                Astrological Decision Simulator
+                Astrolabe Decision Simulator
               </div>
             </div>
             <div className="rounded-full border border-emerald-300/20 bg-emerald-300/10 px-3 py-1 text-xs font-medium text-emerald-200">

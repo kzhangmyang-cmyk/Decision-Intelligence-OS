@@ -4,22 +4,22 @@
 
 @layer base {
   :root {
-    --background: 222 55% 5%;
-    --foreground: 210 40% 96%;
-    --card: 222 45% 8%;
-    --card-foreground: 210 40% 96%;
-    --primary: 188 95% 68%;
+    --background: 230 40% 4%;
+    --foreground: 210 40% 98%;
+    --card: 230 45% 6%;
+    --card-foreground: 210 40% 98%;
+    --primary: 188 100% 60%;
     --primary-foreground: 222 47% 11%;
-    --secondary: 223 28% 14%;
-    --secondary-foreground: 210 40% 96%;
-    --muted: 222 30% 14%;
-    --muted-foreground: 215 20% 68%;
-    --accent: 194 92% 62%;
+    --secondary: 223 30% 12%;
+    --secondary-foreground: 188 100% 60%;
+    --muted: 222 30% 10%;
+    --muted-foreground: 215 20% 70%;
+    --accent: 194 92% 55%;
     --accent-foreground: 222 47% 11%;
-    --border: 220 28% 18%;
-    --input: 220 24% 14%;
-    --ring: 188 95% 68%;
-    --radius: 1.5rem;
+    --border: 220 35% 15%;
+    --input: 220 30% 12%;
+    --ring: 188 100% 60%;
+    --radius: 0.5rem;
     color-scheme: dark;
   }
 
@@ -34,6 +34,9 @@
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-display), sans-serif;
+    background-image: 
+      radial-gradient(circle at 15% 50%, rgba(34, 211, 238, 0.04), transparent 25%),
+      radial-gradient(circle at 85% 30%, rgba(34, 211, 238, 0.04), transparent 25%);
   }
 }
 
@@ -43,31 +46,99 @@
   }
 
   .surface-grid {
-    background-image: linear-gradient(to right, rgba(148, 163, 184, 0.08) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(148, 163, 184, 0.08) 1px, transparent 1px);
-    background-size: 24px 24px;
+    background-image: 
+      linear-gradient(to right, rgba(34, 211, 238, 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(34, 211, 238, 0.06) 1px, transparent 1px);
+    background-size: 32px 32px;
+    position: relative;
+    mask-image: radial-gradient(circle at center, black, transparent 80%);
+    -webkit-mask-image: radial-gradient(circle at center, black, transparent 80%);
   }
 
   .panel-highlight {
-    box-shadow: 0 0 0 1px rgba(103, 232, 249, 0.12), 0 20px 60px rgba(8, 47, 73, 0.28);
+    box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.3), 0 0 30px rgba(8, 47, 73, 0.6), inset 0 0 20px rgba(34, 211, 238, 0.05);
+    backdrop-filter: blur(16px);
+  }
+  
+  .tech-border {
+    position: relative;
+  }
+  .tech-border::before, .tech-border::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 2px solid rgba(34, 211, 238, 0.6);
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+  .tech-border::before {
+    top: -2px;
+    left: -2px;
+    border-right: none;
+    border-bottom: none;
+  }
+  .tech-border::after {
+    bottom: -2px;
+    right: -2px;
+    border-left: none;
+    border-top: none;
+  }
+
+  .tech-border:hover::before, .tech-border:hover::after {
+    width: 20px;
+    height: 20px;
+    border-color: rgba(34, 211, 238, 1);
+    box-shadow: 0 0 12px rgba(34, 211, 238, 0.6);
   }
 
   .text-mono {
     font-family: var(--font-mono), monospace;
   }
+
+  .glow-text {
+    text-shadow: 0 0 10px rgba(34, 211, 238, 0.5), 0 0 20px rgba(34, 211, 238, 0.3);
+  }
+  
+  .glow-text-sm {
+    text-shadow: 0 0 8px rgba(34, 211, 238, 0.4);
+  }
+
+  .scanline {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .scanline::after {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    right: 0;
+    height: 20%;
+    background: linear-gradient(to bottom, transparent, rgba(34, 211, 238, 0.15), transparent);
+    animation: scan 8s linear infinite;
+    pointer-events: none;
+    z-index: 10;
+  }
 }
 
 body::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 body::-webkit-scrollbar-track {
-  background: rgba(15, 23, 42, 0.7);
+  background: rgba(10, 15, 25, 1);
+  border-left: 1px solid rgba(34, 211, 238, 0.1);
 }
 
 body::-webkit-scrollbar-thumb {
-  background: rgba(125, 211, 252, 0.26);
-  border-radius: 9999px;
+  background: rgba(34, 211, 238, 0.3);
+  border-radius: 4px;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: rgba(34, 211, 238, 0.6);
+  box-shadow: 0 0 10px rgba(34, 211, 238, 0.5);
 }
 
 @media (prefers-reduced-motion: reduce) {

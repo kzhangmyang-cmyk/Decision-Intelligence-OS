@@ -1,6 +1,6 @@
-# Astrological Decision Simulator Backend
+# Astrolabe Decision Simulator Backend
 
-FastAPI backend for the Astrological Decision Simulator product.
+FastAPI backend for the Astrolabe Decision Simulator product.
 
 ## What is in V1
 

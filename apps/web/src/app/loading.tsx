@@ -4,7 +4,7 @@ export default function RootLoading() {
   return (
     <LoadingState
       fullScreen
-      title="Booting Astrological Decision Simulator"
+      title="Booting Astrolabe Decision Simulator"
       description="Syncing symbolic signals, worldline state, and replay layers."
     />
   );

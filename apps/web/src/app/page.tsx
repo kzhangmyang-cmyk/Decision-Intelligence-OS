@@ -30,7 +30,7 @@ const capabilityCards = [
   },
   {
     icon: Radar,
-    title: "100 Astrological Worldlines",
+    title: "100 Astrolabe Worldlines",
     label: "Simulate",
     description:
       "Run 100 symbolic branches of the same scenario with different archetype emphasis, timing bias, and interpretation drift.",
@@ -104,15 +104,15 @@ export default function HomePage() {
   return (
     <main className="relative overflow-hidden">
       <section className="mx-auto max-w-7xl px-6 pb-24 pt-8 md:px-8 md:pb-28 md:pt-12">
-        <div className="flex items-center justify-between rounded-full border border-white/10 bg-white/[0.03] px-4 py-3 backdrop-blur-xl">
-          <div className="flex items-center gap-3 text-sm text-slate-300">
-            <div className="flex h-9 w-9 items-center justify-center rounded-full border border-cyan-300/20 bg-cyan-300/10 text-cyan-100">
-              <Sparkles className="h-4 w-4" />
+        <div className="tech-border flex items-center justify-between bg-black/40 px-6 py-3 backdrop-blur-md">
+          <div className="flex items-center gap-4 text-sm text-cyan-100">
+            <div className="flex h-9 w-9 items-center justify-center border border-cyan-500/30 bg-cyan-900/20 text-cyan-300">
+              <Radar className="h-5 w-5 animate-pulseGlow" />
             </div>
             <div>
-              <div className="font-medium text-white">Astrological Decision Simulator</div>
-              <div className="text-xs uppercase tracking-[0.24em] text-slate-500">
-                symbolic worldline engine
+              <div className="font-mono text-xs font-bold uppercase tracking-widest text-cyan-300 glow-text-sm">[ SYSTEM: ONLINE ] ASTROLABE DECISION SIMULATOR</div>
+              <div className="text-mono text-[10px] uppercase tracking-[0.3em] text-cyan-500/70">
+                {"// SYMBOLIC WORLDLINE ENGINE v2.4"}
               </div>
             </div>
           </div>
@@ -138,28 +138,28 @@ export default function HomePage() {
           >
             <motion.div
               variants={fadeUp}
-              className="inline-flex items-center rounded-full border border-cyan-300/20 bg-cyan-300/10 px-4 py-2 text-xs uppercase tracking-[0.32em] text-cyan-100"
+              className="tech-border inline-flex items-center bg-cyan-950/30 px-4 py-2 text-mono text-xs uppercase tracking-[0.4em] text-cyan-300"
             >
-              Assess -&gt; Simulate -&gt; Act
+              [ PROCESS.SEQUENCE: ASSESS // SIMULATE // ACT ]
             </motion.div>
             <motion.div variants={fadeUp} className="space-y-6">
-              <h1 className="max-w-4xl text-balance text-5xl font-semibold tracking-[-0.08em] text-white md:text-6xl xl:text-7xl">
-                Compare symbolic paths before you commit to one interpretation.
+              <h1 className="glow-text max-w-4xl text-balance text-5xl font-semibold tracking-[-0.04em] text-white md:text-6xl xl:text-7xl">
+                <span className="text-cyan-400">&lt;</span> COMPARE SYMBOLIC PATHS BEFORE YOU COMMIT TO ONE INTERPRETATION <span className="text-cyan-400">/&gt;</span>
               </h1>
               <p className="max-w-2xl text-lg leading-8 text-slate-300 md:text-xl">
-                Astrological Decision Simulator structures the question, simulates 100 worldlines, and
+                Astrolabe Decision Simulator structures the question, simulates 100 worldlines, and
                 turns symbolic uncertainty into replayable action paths. It is built for moments when one
                 reading is not enough and the real task is comparing branches with discipline.
               </p>
             </motion.div>
-            <motion.div variants={fadeUp} className="flex flex-col gap-4 sm:flex-row">
-              <Link href="/intake" className={buttonVariants({ size: "lg" })}>
-                Start Assessment
-                <ArrowRight className="h-4 w-4" />
+            <motion.div variants={fadeUp} className="flex flex-col gap-4 sm:flex-row font-mono">
+              <Link href="/intake" className={buttonVariants({ size: "lg" }) + " tech-border rounded-none bg-cyan-600 hover:bg-cyan-500 text-black font-bold uppercase tracking-widest"}>
+                [ INIT_ASSESSMENT ]
+                <ArrowRight className="h-4 w-4 ml-2" />
               </Link>
               <Link
                 href="#dashboard-preview"
-                className={buttonVariants({ size: "lg", variant: "secondary" })}
+                className={buttonVariants({ size: "lg", variant: "secondary" }) + " tech-border rounded-none bg-transparent hover:bg-cyan-950/50 border border-cyan-600/50 text-cyan-300 uppercase tracking-widest"}
               >
                 Explore Dashboard
                 <ChartColumnIncreasing className="h-4 w-4" />
@@ -173,10 +173,10 @@ export default function HomePage() {
               ].map(([value, label]) => (
                 <div
                   key={label}
-                  className="rounded-[24px] border border-white/8 bg-white/[0.03] p-4 backdrop-blur-xl"
+                  className="tech-border scanline bg-black/40 p-4 backdrop-blur-md"
                 >
-                  <div className="text-2xl font-semibold tracking-[-0.06em] text-white">{value}</div>
-                  <div className="mt-1 text-sm uppercase tracking-[0.22em] text-slate-500">{label}</div>
+                  <div className="font-mono text-3xl font-semibold tracking-tight text-cyan-300 glow-text-sm">{value}</div>
+                  <div className="mt-2 text-mono text-xs uppercase tracking-[0.22em] text-slate-400">{label}</div>
                 </div>
               ))}
             </motion.div>
@@ -201,12 +201,12 @@ export default function HomePage() {
         />
         <div className="mt-10 grid gap-6 lg:grid-cols-3">
           {architectureBlocks.map((item, index) => (
-            <Card key={item.title} className="border-white/10 bg-white/[0.03]">
+            <Card key={item.title} className="tech-border rounded-none border-cyan-900/50 bg-black/50">
               <CardContent className="p-6">
-                <div className="text-mono text-xs uppercase tracking-[0.28em] text-cyan-200/70">
-                  0{index + 1}
+                <div className="text-mono text-xs uppercase tracking-[0.28em] text-cyan-400">
+                  [ BLK.0{index + 1} ]
                 </div>
-                <div className="mt-4 text-lg font-medium text-white">{item.title}</div>
+                <div className="mt-4 font-mono text-lg font-medium text-cyan-100">{item.title}</div>
                 <p className="mt-4 text-lg leading-8 text-slate-200">{item.body}</p>
               </CardContent>
             </Card>
@@ -229,11 +229,11 @@ export default function HomePage() {
               viewport={{ once: true, amount: 0.25 }}
               transition={{ duration: 0.45, delay: index * 0.08 }}
             >
-              <Card className="group relative h-full overflow-hidden border-white/10 bg-[linear-gradient(180deg,rgba(15,23,42,0.76),rgba(2,6,23,0.88))] transition-transform duration-300 hover:-translate-y-1 hover:border-cyan-300/20 hover:shadow-glow">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(34,211,238,0.12),_transparent_32%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                <CardHeader className="relative">
+              <Card className="tech-border scanline group relative h-full overflow-hidden rounded-none border-cyan-900/50 bg-black/60 transition-transform duration-300 hover:-translate-y-1 hover:shadow-glow-strong">
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(34,211,238,0.15),_transparent_40%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                <CardHeader className="relative border-b border-cyan-900/30 mb-2">
                   <div className="flex items-center justify-between">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-cyan-300/15 bg-cyan-300/10 text-cyan-100">
+                    <div className="flex h-12 w-12 items-center justify-center border border-cyan-500/30 bg-cyan-900/20 text-cyan-300">
                       <item.icon className="h-5 w-5" />
                     </div>
                     <div className="text-mono text-xs uppercase tracking-[0.28em] text-slate-500">
@@ -270,13 +270,13 @@ export default function HomePage() {
         />
         <div className="mt-10 grid gap-6 lg:grid-cols-3">
           {workflow.map((item, index) => (
-            <Card key={item.step} className="relative overflow-hidden border-white/10 bg-white/[0.03]">
-              <div className="absolute left-0 top-0 h-1 w-full bg-gradient-to-r from-cyan-400/0 via-cyan-300/80 to-cyan-400/0" />
+            <Card key={item.step} className="tech-border relative overflow-hidden rounded-none border-cyan-900/30 bg-black/40">
+              <div className="absolute left-0 top-0 h-1 w-full bg-gradient-to-r from-cyan-400/0 via-cyan-500/80 to-cyan-400/0" />
               <CardHeader>
-                <div className="text-mono text-xs uppercase tracking-[0.28em] text-cyan-200/70">
-                  {item.step}
+                <div className="text-mono text-xs uppercase tracking-[0.28em] text-cyan-500">
+                  [ STEP.{item.step} ]
                 </div>
-                <CardTitle className="text-2xl tracking-[-0.05em]">{item.title}</CardTitle>
+                <CardTitle className="font-mono text-2xl tracking-tight text-white">{item.title}</CardTitle>
               </CardHeader>
               <CardContent className="text-base leading-7 text-slate-300">{item.body}</CardContent>
               {index < workflow.length - 1 ? (
@@ -309,15 +309,15 @@ export default function HomePage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-6 pb-28 pt-12 md:px-8">
-        <Card className="overflow-hidden border-cyan-300/20 bg-[linear-gradient(135deg,rgba(8,47,73,0.75),rgba(2,6,23,0.92))] panel-highlight">
+        <Card className="tech-border scanline rounded-none border-cyan-500/30 bg-black/80 panel-highlight">
           <CardContent className="relative p-8 md:p-12">
-            <div className="absolute right-[-4rem] top-[-4rem] h-48 w-48 rounded-full bg-cyan-300/10 blur-[80px]" />
+            <div className="absolute right-[-4rem] top-[-4rem] h-48 w-48 bg-cyan-500/20 blur-[100px]" />
             <div className="grid gap-10 lg:grid-cols-[1.2fr,0.8fr] lg:items-end">
               <div>
-                <div className="inline-flex items-center rounded-full border border-cyan-300/20 bg-cyan-300/10 px-3 py-1 text-xs uppercase tracking-[0.28em] text-cyan-100">
-                  Ready to Start
+                <div className="inline-flex items-center border border-cyan-500/40 bg-cyan-950/40 px-3 py-1 text-mono text-xs uppercase tracking-[0.3em] text-cyan-300">
+                  {"// INITIALIZE.SYSTEM //"}
                 </div>
-                <h2 className="mt-5 max-w-3xl text-balance text-4xl font-semibold tracking-[-0.06em] text-white md:text-5xl">
+                <h2 className="glow-text mt-5 max-w-3xl text-balance text-4xl font-semibold tracking-[-0.04em] text-white md:text-5xl">
                   Put the question into the system. Assess it. Simulate it. Replay it.
                 </h2>
                 <p className="mt-4 max-w-2xl text-lg leading-8 text-slate-300">

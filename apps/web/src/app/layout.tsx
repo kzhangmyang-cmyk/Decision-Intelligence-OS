@@ -18,7 +18,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Astrological Decision Simulator",
+  title: "Astrolabe Decision Simulator",
   description:
     "Assess symbolic scenarios, simulate 100 worldlines, and turn uncertainty into replayable action paths.",
 };

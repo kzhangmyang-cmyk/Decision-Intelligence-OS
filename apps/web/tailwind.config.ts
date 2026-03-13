@@ -43,15 +43,18 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       boxShadow: {
-        glow: "0 0 0 1px rgba(94, 234, 212, 0.15), 0 16px 60px rgba(6, 182, 212, 0.12)",
-        panel: "0 14px 42px rgba(2, 6, 23, 0.45)",
+        glow: "0 0 0 1px rgba(34, 211, 238, 0.3), 0 0 20px rgba(34, 211, 238, 0.2)",
+        "glow-strong": "0 0 0 1px rgba(34, 211, 238, 0.6), 0 0 30px rgba(34, 211, 238, 0.4)",
+        panel: "0 10px 40px rgba(2, 6, 23, 0.6), inset 0 0 15px rgba(34, 211, 238, 0.05)",
       },
       backgroundImage: {
-        grid: "linear-gradient(to right, rgba(148,163,184,0.08) 1px, transparent 1px), linear-gradient(to bottom, rgba(148,163,184,0.08) 1px, transparent 1px)",
+        grid: "linear-gradient(to right, rgba(34,211,238,0.06) 1px, transparent 1px), linear-gradient(to bottom, rgba(34,211,238,0.06) 1px, transparent 1px)",
       },
       animation: {
         float: "float 8s ease-in-out infinite",
         pulseLine: "pulseLine 3.6s ease-in-out infinite",
+        scan: "scan 8s linear infinite",
+        pulseGlow: "pulseGlow 3s ease-in-out infinite",
       },
       keyframes: {
         float: {
@@ -59,9 +62,17 @@ const config: Config = {
           "50%": { transform: "translateY(-10px)" },
         },
         pulseLine: {
-          "0%, 100%": { opacity: "0.45" },
+          "0%, 100%": { opacity: "0.2" },
           "50%": { opacity: "1" },
         },
+        scan: {
+          "0%": { transform: "translateY(-100%)" },
+          "100%": { transform: "translateY(1000%)" },
+        },
+        pulseGlow: {
+          "0%, 100%": { textShadow: "0 0 8px rgba(34, 211, 238, 0.4)" },
+          "50%": { textShadow: "0 0 16px rgba(34, 211, 238, 0.8), 0 0 24px rgba(34, 211, 238, 0.4)" },
+        }
       },
     },
   },

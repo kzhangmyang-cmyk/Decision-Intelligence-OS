@@ -351,13 +351,13 @@ export const intakeFields: IntakeField[] = [
   },
   {
     label: "Wedge",
-    value: "Astrological simulator for branching scenarios, replayable timing analysis, and action guidance.",
+    value: "Astrolabe simulator for branching scenarios, replayable timing analysis, and action guidance.",
     detail: "Position around symbolic clarity and path comparison, not generic horoscope content.",
   },
 ];
 
 export const defaultIntakeDraft: IntakeDraft = {
-  projectName: "Astrological Decision Simulator",
+  projectName: "Astrolabe Decision Simulator",
   oneLiner: "Turn symbolic uncertainty into structured scenario comparisons before making a timing-sensitive choice.",
   targetCustomer:
     "Astrologers, symbolic readers, and curious decision-makers who want more than a static horoscope or one-shot reading.",
@@ -381,19 +381,19 @@ export const defaultIntakeDraft: IntakeDraft = {
     {
       id: "ev-1",
       type: "landing-page",
-      url: "https://astrological-simulator.example/landing",
+      url: "https://astrolabe-simulator.example/landing",
       note: "Early concept page for the symbolic-path positioning test.",
     },
     {
       id: "ev-2",
       type: "repo",
-      url: "https://github.com/example/astrological-decision-simulator",
+      url: "https://github.com/example/astrolabe-decision-simulator",
       note: "Prototype repo for the simulation shell and replay UI.",
     },
     {
       id: "ev-3",
       type: "demo",
-      url: "https://demo.example/astrological-simulator",
+      url: "https://demo.example/astrolabe-simulator",
       note: "Interactive mock showing symbolic reports and worldline replay concepts.",
     },
   ],
