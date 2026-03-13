@@ -1,6 +1,6 @@
-# Decision Intelligence OS Backend
+# Astrological Decision Simulator Backend
 
-FastAPI backend for the Decision Intelligence OS product.
+FastAPI backend for the Astrological Decision Simulator product.
 
 ## What is in V1
 

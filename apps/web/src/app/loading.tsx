@@ -4,8 +4,8 @@ export default function RootLoading() {
   return (
     <LoadingState
       fullScreen
-      title="Booting Decision Intelligence OS"
-      description="Syncing the strategic interface, worldline state, and decision layers."
+      title="Booting Astrological Decision Simulator"
+      description="Syncing symbolic signals, worldline state, and replay layers."
     />
   );
 }

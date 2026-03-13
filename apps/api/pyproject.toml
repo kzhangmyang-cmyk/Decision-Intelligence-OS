@@ -3,9 +3,9 @@ requires = ["setuptools>=68.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "decision-intelligence-os-backend"
+name = "astrological-decision-simulator-backend"
 version = "0.1.0"
-description = "Decision Intelligence OS Backend"
+description = "Astrological Decision Simulator Backend"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [

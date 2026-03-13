@@ -1,93 +1,85 @@
 <p align="center">
-  <img src=".github/assets/social-preview.png" alt="Decision Intelligence OS social preview" width="100%" />
+  <img src=".github/assets/social-preview.png" alt="Astrological Decision Simulator social preview" width="100%" />
 </p>
 
-<h1 align="center">Decision Intelligence OS</h1>
+<h1 align="center">Astrological Decision Simulator</h1>
 
 <p align="center">
-  <strong>Assess startup ideas. Simulate 100 virtual companies. Turn uncertainty into action.</strong>
+  <strong>Assess symbolic signals. Simulate 100 worldlines. Turn uncertainty into action.</strong>
 </p>
 
 <p align="center">
-  Built for AI founders, solo operators, and 2-10 person teams.
+  Built for astrologers, symbolic practitioners, and curious decision-makers who want replayable scenario analysis.
 </p>
 
 ## What This Is
 
-Decision Intelligence OS is not a generic startup copilot and not a business-plan generator.
+Astrological Decision Simulator is not a generic horoscope chatbot and not a static chart viewer.
 
-It is a constrained decision system that answers three questions in order:
+It is a structured decision simulator designed to answer three questions in order:
 
-1. Is this idea worth doing now?
-2. If we do it, how does it evolve across 100 parallel worldlines?
-3. What is the next lowest-cost experiment or action that materially improves the odds?
+1. What does this question look like when the signals are made explicit?
+2. How do 100 parallel worldlines evolve under different symbolic assumptions?
+3. What is the next action, timing window, or question worth testing?
 
 ## Core Loop
 
 | Layer | What it does | Main outputs |
 | --- | --- | --- |
-| `Assess` | Converts founder input, evidence, and constraints into a structured scenario. | Viability score, data sufficiency, confidence, risks, leverage points |
-| `Simulate` | Runs 100 virtual companies that share the same idea but vary on founder type, pricing, channel, automation, and market noise. | Survival rates, profitability paths, death reasons, best strategy patterns |
-| `Act` | Turns assessment and simulation outcomes into staged execution guidance. | Next Best Experiments, Day 1 -> Month 6 plan, stop-loss rules |
+| `Assess` | Converts chart notes, symbolic evidence, and constraints into a structured scenario. | Signal map, confidence, key tensions, leverage points |
+| `Simulate` | Runs 100 symbolic worldlines that vary by archetype emphasis, timing bias, and interpretation path. | Survival curves, path divergence, failure patterns, best-fit trajectories |
+| `Act` | Turns the simulation into practical guidance and replayable next steps. | Timing notes, next questions, action paths, stop-loss logic |
 
 ## Why It Matters
 
-- Startup teams do not fail because they lack opinions. They fail because they make expensive moves under weak evidence.
-- Most tools help with brainstorming. Very few force hard constraints like budget, runway, founder energy, and delivery capacity into the loop.
-- Decision Intelligence OS is designed to compress uncertainty into a system with state, rules, replay, and action sequencing.
+- Most astrology tools stop at interpretation. They do not compare alternative paths under constraints.
+- Real decisions are rarely blocked by lack of symbolism. They are blocked by messy signals, competing interpretations, and no replayable decision structure.
+- Astrological Decision Simulator is built to compress symbolic uncertainty into something you can inspect, compare, and act on.
 
 ## Architecture At A Glance
 
-This repository combines three product ideas into one system:
+This repository combines three system ideas into one product:
 
-- `MiroFish`: world modeling -> role generation -> simulation -> report
-- `Paperclip`: org chart, heartbeat scheduling, budget constraints, audit logs, multi-company isolation
-- `OS2.0`: decision engine, scoring, data sufficiency, confidence, feedback loop, Next Best Experiment
+- `World modeling`: turn symbolic inputs into a scenario the engine can reason about
+- `Worldline simulation`: explore 100 constrained branches instead of one linear interpretation
+- `Replay + planning`: turn outcomes into explanations, next actions, and timing-sensitive guidance
 
-The core differentiation is `100 parallel virtual company simulations` for the same startup idea under hard business constraints.
+The core differentiation is `100 parallel worldline simulations` for the same question rather than a single static reading.
 
 ```mermaid
 flowchart LR
-    A["Structured Intake"] --> B["Assess<br/>Decision Intelligence Engine"]
+    A["Structured Intake"] --> B["Assess<br/>Signal Mapping Layer"]
     B --> C{"Simulation Gate"}
-    C -->|Enough evidence| D["Simulate<br/>100 Parallel Worldlines"]
-    C -->|Not enough evidence| E["Next Best Experiments"]
-    D --> F["Act<br/>DecisionOS Planner"]
+    C -->|Enough signal| D["Simulate<br/>100 Parallel Worldlines"]
+    C -->|Signal still weak| E["Next Questions"]
+    D --> F["Act<br/>Guidance Layer"]
     E --> F
-    F --> G["Day 1 -> Month 6 Plan"]
+    F --> G["Replayable Decision Path"]
 ```
 
 ## System Primitives
 
-### Fixed Agents Per Company
+### Core Layers
 
-- `Founder Agent`: pricing, channels, hiring, product priorities, pivot decisions
-- `Market Agent`: leads, conversion, churn, demand shifts, price sensitivity
-- `Operations Agent`: capacity, backlog, quality, support load, founder overload
-- `Finance Agent`: revenue, cost, profit, cash, runway, death conditions
-- `Judge Agent`: stage labels, causal explanations, audit log, replay summaries
+- `Signal Mapping`: transforms the question, context, and chart interpretation into explicit inputs
+- `Worldline Engine`: branches the same scenario into multiple constrained symbolic paths
+- `Judge Layer`: explains why a path strengthens, stalls, or collapses
+- `Guidance Layer`: turns outcomes into practical next steps
 
 ### Hard Constraints
 
-- cash balance
-- runway
-- founder energy
-- delivery capacity
-- CAC and payback logic
-- marketing budget
-- hiring overhead
+- timing windows
+- interpretation confidence
+- conflicting signals
+- path dependency
+- decision cost
+- replayability
 
 ### State-Driven Simulation
 
-This is not free-form multi-agent chat.
+This is not free-form chat.
 
-Each company evolves through explicit monthly heartbeats:
-
-1. Founder decides
-2. Market reacts
-3. Operations absorbs the consequence
-4. Finance settles the month
-5. Judge records the causal chain
+Each worldline moves through explicit heartbeat cycles so the replay stays causal instead of purely narrative.
 
 ## Repository Map
 
@@ -134,11 +126,11 @@ python scripts/seed_demo.py
 
 ### Frontend
 
-- Scenario intake
-- Assessment report
+- Structured intake
+- Decision report
 - Planner page
 - Simulation overview
-- Single-company replay page
+- Single-worldline replay page
 - Landing page aligned to the Assess -> Simulate -> Act narrative
 
 ### Backend
@@ -153,19 +145,16 @@ python scripts/seed_demo.py
 
 ## Intended Output
 
-For each startup idea, the system is designed to produce:
+For each decision scenario, the system is designed to produce:
 
-- structured project summary
-- viability score and 8-dimension scoring
-- data sufficiency score
-- confidence score
-- top risks and top leverage points
-- 1 / 6 / 12 / 24 month survival rates
-- profitability path and death-reason distribution
-- best strategy path
-- best founder profile fit
-- top three Next Best Experiments
-- phase-based plan for Day 1, Week 1, Month 1, Month 3, Month 6
+- structured scenario summary
+- signal confidence and evidence posture
+- risk and leverage map
+- 1 / 6 / 12 / 24 cycle worldline behavior
+- path divergence and failure-pattern distribution
+- best-fit trajectory
+- top next questions
+- phase-based action plan
 
 ## Status
 

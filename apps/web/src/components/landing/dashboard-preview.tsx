@@ -28,7 +28,7 @@ export function DashboardPreview() {
         <CardHeader className="flex flex-row items-center justify-between space-y-0 border-b border-white/8 pb-5">
           <div>
             <div className="text-xs uppercase tracking-[0.28em] text-cyan-200/70">Simulation Overview</div>
-            <CardTitle className="mt-2 text-2xl tracking-[-0.04em]">100 Parallel Worldlines</CardTitle>
+            <CardTitle className="mt-2 text-2xl tracking-[-0.04em]">100 Astrological Worldlines</CardTitle>
           </div>
           <div className="rounded-full border border-cyan-300/15 bg-cyan-300/10 px-3 py-1 text-xs text-cyan-100">
             replay-ready
@@ -38,9 +38,9 @@ export function DashboardPreview() {
           <div className="space-y-4 rounded-[24px] border border-white/8 bg-white/[0.02] p-4">
             <div className="flex items-center justify-between">
               <div>
-                <div className="text-sm font-medium text-white">Survival Curve</div>
+                <div className="text-sm font-medium text-white">Path Divergence</div>
                 <div className="text-sm text-slate-400">
-                  Runway, CAC, founder energy, and market noise across monthly heartbeats
+                  Signal confidence, timing pressure, and symbolic drift across replay phases
                 </div>
               </div>
               <LineChart className="h-4 w-4 text-cyan-200" />
@@ -81,8 +81,8 @@ export function DashboardPreview() {
           <div className="space-y-4 rounded-[24px] border border-white/8 bg-white/[0.02] p-4">
             <div className="flex items-center justify-between">
               <div>
-                <div className="text-sm font-medium text-white">Founder Profiles</div>
-                <div className="text-sm text-slate-400">Outcome distribution by operator pattern</div>
+                <div className="text-sm font-medium text-white">Archetype Spread</div>
+                <div className="text-sm text-slate-400">Outcome distribution by dominant symbolic profile</div>
               </div>
               <Orbit className="h-4 w-4 text-cyan-200" />
             </div>
@@ -135,7 +135,7 @@ export function DashboardPreview() {
         <Card className="border-white/10 bg-slate-950/70">
           <CardHeader>
             <div className="flex items-center justify-between">
-              <CardTitle className="text-xl tracking-[-0.04em]">Judge + Audit</CardTitle>
+              <CardTitle className="text-xl tracking-[-0.04em]">Judge + Replay</CardTitle>
               <Layers3 className="h-4 w-4 text-cyan-200" />
             </div>
           </CardHeader>
@@ -161,14 +161,13 @@ export function DashboardPreview() {
                 <AlertTriangle className="h-4 w-4" />
               </div>
               <div>
-                <div className="text-sm font-medium text-white">Stop-Loss Trigger</div>
+                <div className="text-sm font-medium text-white">Caution Trigger</div>
                 <div className="mt-2 text-sm leading-6 text-slate-300">
-                  If CAC remains above payback after three pricing and ICP iterations, stop broad SMB
-                  expansion and pivot into a narrower compliance wedge before runway compression becomes
-                  irreversible.
+                  If one dramatic transit or symbol starts dominating the whole read, pause and branch the
+                  scenario again before committing to the strongest emotional interpretation.
                 </div>
                 <div className="mt-4 inline-flex items-center gap-1 text-sm text-amber-200">
-                  View action plan
+                  View guidance layer
                   <ArrowUpRight className="h-4 w-4" />
                 </div>
               </div>

@@ -133,8 +133,8 @@ export function SimulationOverviewContent({ data, scenarioId }: SimulationOvervi
       <div className="space-y-4">
         <PageHeader
           eyebrow="Simulation Overview"
-          title="Venture simulation command center for 100 worldlines."
-          description="The same startup thesis runs across constrained company branches so you can inspect survival, profitability, and failure patterns before capital gets allocated."
+          title="Worldline simulation command center for 100 branches."
+          description="The same scenario runs across constrained branches so you can inspect survival, profitability, and failure patterns before committing to one path."
           badge="no simulation loaded"
         />
         <EmptyState
@@ -155,8 +155,8 @@ export function SimulationOverviewContent({ data, scenarioId }: SimulationOvervi
     <div className="space-y-4">
       <PageHeader
         eyebrow="Simulation Overview"
-        title="Venture simulation command center for 100 worldlines."
-        description="The same startup thesis runs across 100 constrained companies with different founder profiles, strategic choices, and market noise. This console shows which worldlines survive, fail, or break out over 12 months."
+        title="Worldline simulation command center for 100 branches."
+        description="The same scenario runs across 100 constrained branches with different profiles, choices, and noise conditions. This console shows which worldlines survive, fail, or break out over 12 phases."
         badge={`${baseCompanies.length} worldlines loaded`}
         actions={
           <Link href={buildPlannerHref(scenarioId, data.id)} className={buttonVariants({ size: "lg" })}>

@@ -131,7 +131,7 @@ export default async function PlannerPage({ searchParams }: PlannerPageProps) {
     return (
       <div className="space-y-4">
         <PageHeader
-          eyebrow="DecisionOS Planner"
+          eyebrow="Astrological Planner"
           title="Translate judgment and simulation into an operating sequence."
           description="This is the action layer: what to do first, what to measure next, what success looks like, and when to adjust or stop instead of drifting forward by default."
           badge={`${planner.stages.length}-stage execution path`}

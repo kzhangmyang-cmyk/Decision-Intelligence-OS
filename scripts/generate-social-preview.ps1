@@ -140,29 +140,29 @@ $whiteBrush = New-Object System.Drawing.SolidBrush([System.Drawing.Color]::FromA
 $mutedBrush = New-Object System.Drawing.SolidBrush([System.Drawing.Color]::FromArgb(255, 160, 178, 197))
 $accentBrush = New-Object System.Drawing.SolidBrush([System.Drawing.Color]::FromArgb(255, 110, 231, 255))
 
-$graphics.DrawString("STARTUP DECISION OPERATING SYSTEM", $eyebrowFont, $cyanBrush, 84, 92)
-$graphics.DrawString("Decision", $titleFont, $whiteBrush, 82, 138)
-$graphics.DrawString("Intelligence OS", $titleFont, $whiteBrush, 82, 194)
+$graphics.DrawString("ASTROLOGICAL WORLDLINE ENGINE", $eyebrowFont, $cyanBrush, 84, 92)
+$graphics.DrawString("Astrological", $titleFont, $whiteBrush, 82, 138)
+$graphics.DrawString("Decision Simulator", $titleFont, $whiteBrush, 82, 194)
 
 $subtitleRect = [System.Drawing.RectangleF]::new(84, 272, 480, 120)
 $graphics.DrawString(
-  "Assess startup ideas. Simulate 100 virtual companies. Turn uncertainty into experiments and execution plans.",
+  "Map symbolic signals. Simulate 100 worldlines. Turn uncertainty into action.",
   $bodyFont,
   $mutedBrush,
   $subtitleRect
 )
 
 $chipX = 84
-$chipX += Draw-Chip -Graphics $graphics -Text "MiroFish" -X $chipX -Y 380 -Font $chipFont
+$chipX += Draw-Chip -Graphics $graphics -Text "Signals" -X $chipX -Y 380 -Font $chipFont
 $chipX += 12
-$chipX += Draw-Chip -Graphics $graphics -Text "Paperclip" -X $chipX -Y 380 -Font $chipFont
+$chipX += Draw-Chip -Graphics $graphics -Text "Worldlines" -X $chipX -Y 380 -Font $chipFont
 $chipX += 12
-[void](Draw-Chip -Graphics $graphics -Text "OS2.0" -X $chipX -Y 380 -Font $chipFont)
+[void](Draw-Chip -Graphics $graphics -Text "Replay" -X $chipX -Y 380 -Font $chipFont)
 
 $loopCards = @(
-  @{ X = 84;  Title = "Assess";   Body = "score" },
-  @{ X = 256; Title = "Simulate"; Body = "worldlines" },
-  @{ X = 428; Title = "Act";      Body = "plan" }
+  @{ X = 84;  Title = "Assess";   Body = "signals" },
+  @{ X = 256; Title = "Simulate"; Body = "branches" },
+  @{ X = 428; Title = "Act";      Body = "timing" }
 )
 
 foreach ($card in $loopCards) {
@@ -177,14 +177,14 @@ foreach ($card in $loopCards) {
   $stroke.Dispose()
 }
 
-$graphics.DrawString("100 Parallel Worldlines", $cardTitleFont, $whiteBrush, 686, 110)
+$graphics.DrawString("100 Astrological Worldlines", $cardTitleFont, $whiteBrush, 686, 110)
 $summaryRect = [System.Drawing.RectangleF]::new(686, 152, 470, 60)
-$graphics.DrawString("Monthly heartbeat. Hard constraints.", $bodyFontCompact, $mutedBrush, $summaryRect)
+$graphics.DrawString("Symbolic branching. Replayable timing paths.", $bodyFontCompact, $mutedBrush, $summaryRect)
 
 $metricCards = @(
-  @{ X = 686; Value = "100"; Label = "companies" },
-  @{ X = 858; Value = "12 mo"; Label = "heartbeat" },
-  @{ X = 1030; Value = "5"; Label = "agents" }
+  @{ X = 686; Value = "100"; Label = "worldlines" },
+  @{ X = 858; Value = "12"; Label = "phases" },
+  @{ X = 1030; Value = "5"; Label = "layers" }
 )
 
 foreach ($metric in $metricCards) {
@@ -203,7 +203,7 @@ $chartFill = New-Object System.Drawing.SolidBrush([System.Drawing.Color]::FromAr
 $chartStroke = New-Object System.Drawing.Pen([System.Drawing.Color]::FromArgb(48, 114, 224, 255), 1.0)
 Fill-RoundedRectangle -Graphics $graphics -Brush $chartFill -X 686 -Y 360 -Width 344 -Height 168 -Radius 26
 Draw-RoundedRectangle -Graphics $graphics -Pen $chartStroke -X 686 -Y 360 -Width 344 -Height 168 -Radius 26
-$graphics.DrawString("Survival curve", $eyebrowFont, $cyanBrush, 708, 382)
+$graphics.DrawString("Path divergence", $eyebrowFont, $cyanBrush, 708, 382)
 
 $linePen = New-Object System.Drawing.Pen([System.Drawing.Color]::FromArgb(255, 104, 234, 255), 4)
 $linePoints = @(
@@ -228,8 +228,8 @@ Draw-RoundedRectangle -Graphics $graphics -Pen $judgeStroke -X 1048 -Y 360 -Widt
 $graphics.DrawString("Judge verdict", $eyebrowFont, $cyanBrush, 1068, 382)
 $judgeHeadlineRect = [System.Drawing.RectangleF]::new(1068, 420, 110, 36)
 $judgeBodyRect = [System.Drawing.RectangleF]::new(1068, 458, 110, 54)
-$graphics.DrawString("Go narrow.", $smallFont, $whiteBrush, $judgeHeadlineRect)
-$graphics.DrawString("price + ICP first", $smallFont, $mutedBrush, $judgeBodyRect)
+$graphics.DrawString("Wait, don't rush.", $smallFont, $whiteBrush, $judgeHeadlineRect)
+$graphics.DrawString("Ask the next chart question first", $smallFont, $mutedBrush, $judgeBodyRect)
 
 $bitmap.Save($outputPath, [System.Drawing.Imaging.ImageFormat]::Png)
 

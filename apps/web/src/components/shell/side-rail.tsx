@@ -22,8 +22,8 @@ export function SideRail() {
               <Sparkles className="h-5 w-5" />
             </div>
             <div>
-              <div className="text-sm font-medium text-white">Decision Intelligence OS</div>
-              <div className="text-xs uppercase tracking-[0.26em] text-slate-500">Strategic Console</div>
+              <div className="text-sm font-medium text-white">Astrological Decision Simulator</div>
+              <div className="text-xs uppercase tracking-[0.26em] text-slate-500">Symbolic Console</div>
             </div>
           </div>
           <div className="mt-5 rounded-[20px] border border-white/10 bg-slate-950/60 p-4">
@@ -79,7 +79,7 @@ export function SideRail() {
               </div>
               <div className="flex items-center justify-between">
                 <span>Simulation mode</span>
-                <span className="text-cyan-100">rule-driven</span>
+                <span className="text-cyan-100">symbolic</span>
               </div>
               <div className="flex items-center justify-between">
                 <span>Audit log</span>

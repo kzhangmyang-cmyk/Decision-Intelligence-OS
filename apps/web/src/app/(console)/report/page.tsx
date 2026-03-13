@@ -113,8 +113,8 @@ export default async function ReportPage({ searchParams }: ReportPageProps) {
     <div className="space-y-4">
       <PageHeader
         eyebrow="Decision Report"
-        title="Read the venture like a strategic intelligence brief, not a dashboard."
-        description="The decision engine compresses the startup thesis into a viability judgment, evidence posture, strategic paths, and the experiments most likely to change the odds."
+        title="Read the scenario like a structured intelligence brief, not a dashboard."
+        description="The decision engine compresses the current thesis into a viability judgment, evidence posture, strategic paths, and the experiments most likely to change the odds."
         badge={`viability ${summary.viabilityScore}/100`}
         actions={
           <Link href={simulationHref} className={buttonVariants({ size: "lg" })}>
@@ -192,8 +192,8 @@ export default async function ReportPage({ searchParams }: ReportPageProps) {
       <div className="grid gap-4 xl:grid-cols-[1.15fr,0.85fr]">
         <SectionCard
           eyebrow="8-Dimensional Assessment"
-          title="How the engine scores the startup across the core venture dimensions"
-          description="This is not a vanity chart. Each axis is tied to a specific decision mechanism that can improve or kill the startup."
+          title="How the engine scores the scenario across the core decision dimensions"
+          description="This is not a vanity chart. Each axis is tied to a specific decision mechanism that can strengthen or collapse the path."
           className="border-white/10 bg-[linear-gradient(180deg,rgba(15,23,42,0.74),rgba(2,6,23,0.9))]"
         >
           <ReportRadarChart breakdown={scoreBreakdown} />

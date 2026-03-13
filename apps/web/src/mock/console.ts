@@ -318,22 +318,22 @@ export const intakeMetrics: ConsoleMetric[] = [
   {
     label: "Evidence density",
     value: "18 signals",
-    caption: "Customer calls, pricing notes, market proofs",
+    caption: "Reader interviews, prototype notes, symbolic test cases",
     delta: "+4 this week",
     tone: "cyan",
   },
   {
-    label: "Founder bandwidth",
+    label: "Builder bandwidth",
     value: "32 hrs/wk",
     caption: "Available execution energy in first 90 days",
     delta: "tight",
     tone: "amber",
   },
   {
-    label: "Runway envelope",
-    value: "$68k",
-    caption: "Usable capital before external financing",
-    delta: "6.5 months",
+    label: "Budget envelope",
+    value: "$42k",
+    caption: "Usable capital before the next prototype cycle",
+    delta: "5.2 months",
     tone: "emerald",
   },
 ];
@@ -341,60 +341,60 @@ export const intakeMetrics: ConsoleMetric[] = [
 export const intakeFields: IntakeField[] = [
   {
     label: "Problem",
-    value: "AI teams cannot quantify if a niche workflow is venture-worthy before building.",
-    detail: "Decision quality is bottlenecked by fragmented evidence and founder bias.",
+    value: "Most astrology tools do not compare alternative paths before pushing one interpretation.",
+    detail: "Decision quality is bottlenecked by fragmented signals and interpretation bias.",
   },
   {
     label: "Customer",
-    value: "AI founders, solo operators, and small product teams evaluating a new wedge.",
-    detail: "Early adopters already comfortable with experimentation and structured software workflows.",
+    value: "Astrologers, symbolic practitioners, and curious decision-makers exploring timing-sensitive choices.",
+    detail: "Early adopters already value structured interpretation and replayable scenario tools.",
   },
   {
     label: "Wedge",
-    value: "Decision operating system for startup feasibility, worldline simulation, and action planning.",
-    detail: "Position around capital allocation and stop-loss clarity, not generic brainstorming.",
+    value: "Astrological simulator for branching scenarios, replayable timing analysis, and action guidance.",
+    detail: "Position around symbolic clarity and path comparison, not generic horoscope content.",
   },
 ];
 
 export const defaultIntakeDraft: IntakeDraft = {
-  projectName: "Decision Intelligence OS",
-  oneLiner: "Turn startup uncertainty into structured decisions before capital gets burned.",
+  projectName: "Astrological Decision Simulator",
+  oneLiner: "Turn symbolic uncertainty into structured scenario comparisons before making a timing-sensitive choice.",
   targetCustomer:
-    "AI founders, solo operators, and 2-10 person teams evaluating an early startup wedge under real resource constraints.",
+    "Astrologers, symbolic readers, and curious decision-makers who want more than a static horoscope or one-shot reading.",
   corePain:
-    "AI founders often build before proving whether a niche problem is strong enough, urgent enough, and monetizable enough.",
+    "Most astrology workflows stop at interpretation fragments and do not compare alternative paths, timing windows, or contradictory signals in a structured way.",
   solution:
-    "Decision operating system that scores a startup thesis, simulates 100 constrained company worldlines, and produces an action plan.",
-  businessModel: "Paid pilot + strategic subscription, with manual report delivery before deeper workflow automation.",
-  pricing: "$500-$2,000 paid pilot, then recurring subscription for ongoing strategic use.",
+    "A simulator that structures chart inputs, runs 100 symbolic worldlines, and produces replayable guidance with next questions and action timing.",
+  businessModel: "Premium readings, paid simulation reports, and subscription access for repeat scenario analysis.",
+  pricing: "$49 personal reports, $199 deep-dive simulations, and subscription tiers for returning users.",
   acquisitionChannels:
-    "Founder-led outreach, curated AI founder communities, operator referrals, and wedge-specific landing pages.",
+    "Astrology communities, newsletters, creator partnerships, search, and shareable scenario reports.",
   founderProfile:
-    "Hybrid founder with product taste, structured thinking, and willingness to sell manually before automating the system.",
-  teamSize: "3",
-  budget: "68000",
+    "Hybrid founder with product judgment, symbolic literacy, and willingness to test guided readings manually before automating the simulator.",
+  teamSize: "2",
+  budget: "42000",
   traction:
-    "8 founder interviews completed, 3 strong pilot conversations, and one early landing page concept under validation.",
+    "Prototype reviews from practicing astrologers, symbolic researchers, and beta users comparing major life choices.",
   competitors:
-    "Generic AI research copilots, business planning tools, and startup analytics dashboards that do not model constrained simulation.",
+    "Generic horoscope apps, chart calculators, tarot tools, and unstructured astrology content that do not model constrained worldline simulation.",
   supplementaryEvidence: [
     {
       id: "ev-1",
       type: "landing-page",
-      url: "https://decisionos.example/landing",
-      note: "Early concept page for the niche-first positioning test.",
+      url: "https://astrological-simulator.example/landing",
+      note: "Early concept page for the symbolic-path positioning test.",
     },
     {
       id: "ev-2",
       type: "repo",
-      url: "https://github.com/example/decision-intelligence-os",
-      note: "Prototype repo for the simulation shell and report UI.",
+      url: "https://github.com/example/astrological-decision-simulator",
+      note: "Prototype repo for the simulation shell and replay UI.",
     },
     {
       id: "ev-3",
       type: "demo",
-      url: "https://demo.example/decisionos",
-      note: "Interactive mock showing report and worldline replay concepts.",
+      url: "https://demo.example/astrological-simulator",
+      note: "Interactive mock showing symbolic reports and worldline replay concepts.",
     },
   ],
 };

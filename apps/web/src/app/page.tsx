@@ -23,39 +23,39 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 const capabilityCards = [
   {
     icon: BrainCircuit,
-    title: "Decision Intelligence Engine",
+    title: "Signal Mapping Layer",
     label: "Assess",
     description:
-      "把 idea、证据、约束和创始人条件压成结构化判断，输出 Viability Score、Data Sufficiency、Confidence、风险与杠杆。",
+      "Turn a question, chart notes, symbolic evidence, and constraints into a structured signal map the engine can reason about.",
   },
   {
     icon: Radar,
-    title: "100 Parallel Worldlines",
+    title: "100 Astrological Worldlines",
     label: "Simulate",
     description:
-      "围绕同一个创业方向生成 100 家虚拟公司，在预算、runway、创始人精力、交付能力和单位经济约束下按月运行。",
+      "Run 100 symbolic branches of the same scenario with different archetype emphasis, timing bias, and interpretation drift.",
   },
   {
     icon: Compass,
-    title: "DecisionOS Planner",
+    title: "Replayable Guidance",
     label: "Act",
     description:
-      "把评分和世界线结果转成 Day 1 到 Month 6 的行动序列，明确关键指标、Next Best Experiment 和止损条件。",
+      "Convert the strongest and weakest branches into next questions, timing windows, action paths, and stop-loss notes.",
   },
 ];
 
 const architectureBlocks = [
   {
-    title: "MiroFish 主链路",
-    body: "世界建模 -> 角色生成 -> 多公司仿真 -> 报告与回放，把 idea 压成可演化的世界模型。",
+    title: "Symbolic Modeling",
+    body: "Structure the question first so the simulator can inspect signals instead of reacting to free-form prompts.",
   },
   {
-    title: "Paperclip 控制平面",
-    body: "Org chart、heartbeat、budget、audit log、multi-company isolation，让仿真遵守经营约束，而不是自由聊天。",
+    title: "Worldline Engine",
+    body: "The same scenario branches into 100 constrained paths rather than collapsing into one definitive reading.",
   },
   {
-    title: "OS2.0 判断层",
-    body: "评分系统、数据充分度、置信度、风险识别、杠杆识别和 Next Best Experiment 先于深度仿真发生。",
+    title: "Replay + Guidance",
+    body: "Every path is inspectable, replayable, and convertible into concrete next moves rather than abstract interpretation alone.",
   },
 ];
 
@@ -63,35 +63,35 @@ const workflow = [
   {
     step: "01",
     title: "Assess",
-    body: "先判断这件事现在值不值得做，而不是靠主观热情开工。",
+    body: "Map the symbolic inputs clearly before jumping to interpretation.",
   },
   {
     step: "02",
     title: "Simulate",
-    body: "再让 100 条平行世界线在不同 founder 类型、渠道、价格和市场噪声中跑起来。",
+    body: "Compare 100 possible paths instead of anchoring on a single reading too early.",
   },
   {
     step: "03",
     title: "Act",
-    body: "最后只保留最值得执行的动作、指标、实验顺序和止损点。",
+    body: "Turn the strongest signal patterns into next steps, timing notes, and caution flags.",
   },
 ];
 
 const audiences = [
   {
     icon: Target,
-    title: "AI 创业者",
-    body: "方向很多、资源很少时，更需要高密度判断，而不是泛泛的创业建议。",
+    title: "Astrologers",
+    body: "Use a structured replay layer when a client question has too many symbolic branches to trust one linear read.",
   },
   {
     icon: Binary,
-    title: "一人公司",
-    body: "把有限时间和现金压到胜率更高的路径上，避免在低概率方向上消耗数月。",
+    title: "Symbolic Researchers",
+    body: "Inspect how timing, archetypes, and interpretation bias alter the shape of a possible path.",
   },
   {
     icon: Users,
-    title: "2-10 人团队",
-    body: "在产品、GTM、预算分配之间建立统一决策语言，减少拍脑袋推进。",
+    title: "Decision Makers",
+    body: "Compare scenario paths when a choice feels timing-sensitive, emotionally noisy, or symbolically complex.",
   },
 ];
 
@@ -110,9 +110,9 @@ export default function HomePage() {
               <Sparkles className="h-4 w-4" />
             </div>
             <div>
-              <div className="font-medium text-white">Decision Intelligence OS</div>
+              <div className="font-medium text-white">Astrological Decision Simulator</div>
               <div className="text-xs uppercase tracking-[0.24em] text-slate-500">
-                startup decision operating system
+                symbolic worldline engine
               </div>
             </div>
           </div>
@@ -144,12 +144,12 @@ export default function HomePage() {
             </motion.div>
             <motion.div variants={fadeUp} className="space-y-6">
               <h1 className="max-w-4xl text-balance text-5xl font-semibold tracking-[-0.08em] text-white md:text-6xl xl:text-7xl">
-                把创业的不确定性，压缩成可判断、可仿真、可执行的决策系统。
+                Compare symbolic paths before you commit to one interpretation.
               </h1>
               <p className="max-w-2xl text-lg leading-8 text-slate-300 md:text-xl">
-                先判断一个 idea 当前值不值得做，再让 100 家虚拟公司在同一市场里按月运行，
-                最后只输出最值得执行的实验、动作和止损条件。Decision Intelligence OS
-                不是聊天助手，而是创业决策引擎、世界线仿真器和行动规划器。
+                Astrological Decision Simulator structures the question, simulates 100 worldlines, and
+                turns symbolic uncertainty into replayable action paths. It is built for moments when one
+                reading is not enough and the real task is comparing branches with discipline.
               </p>
             </motion.div>
             <motion.div variants={fadeUp} className="flex flex-col gap-4 sm:flex-row">
@@ -167,9 +167,9 @@ export default function HomePage() {
             </motion.div>
             <motion.div variants={fadeUp} className="grid gap-4 sm:grid-cols-3">
               {[
-                ["78/100", "viability signal"],
-                ["100", "virtual companies"],
-                ["Monthly", "heartbeat replay"],
+                ["100", "symbolic worldlines"],
+                ["12", "replay phases"],
+                ["Replay", "judgeable paths"],
               ].map(([value, label]) => (
                 <div
                   key={label}
@@ -196,8 +196,8 @@ export default function HomePage() {
       <section className="mx-auto max-w-7xl px-6 py-20 md:px-8">
         <SectionHeading
           eyebrow="Architecture"
-          title="融合 MiroFish、Paperclip 和 OS2.0，不再是泛化的创业助手。"
-          description="产品主张很直接：先建立世界模型，再在硬约束里跑 100 条世界线，最后只输出值得执行的判断和动作。"
+          title="A symbolic simulator, not a one-shot horoscope interface."
+          description="The product thesis is simple: structure the signal field, branch the scenario into multiple worldlines, then convert the replay into a better next move."
         />
         <div className="mt-10 grid gap-6 lg:grid-cols-3">
           {architectureBlocks.map((item, index) => (
@@ -217,8 +217,8 @@ export default function HomePage() {
       <section id="capabilities" className="mx-auto max-w-7xl px-6 py-20 md:px-8">
         <SectionHeading
           eyebrow="Core Capabilities"
-          title="从结构化判断，到世界线仿真，再到行动规划。"
-          description="这三个模块不是孤立页面，而是一条连续的创业决策链路。先判断，再仿真，最后行动。"
+          title="From signal mapping, to worldline simulation, to guidance."
+          description="These modules are not isolated pages. They are one continuous loop: assess the symbolic field, simulate the branches, then act with more clarity."
         />
         <div className="mt-10 grid gap-6 lg:grid-cols-3">
           {capabilityCards.map((item, index) => (
@@ -254,8 +254,8 @@ export default function HomePage() {
       <section id="dashboard-preview" className="mx-auto max-w-7xl px-6 py-20 md:px-8">
         <SectionHeading
           eyebrow="Dashboard Preview"
-          title="像控制平面一样查看评分、世界线结果和下一步动作。"
-          description="首页预览展示的是系统如何把创业问题转成一组持续更新的决策界面：评分、风险、世界线分布、Judge 解释层和动作建议。"
+          title="Read the symbolic field like a control plane, not a feed of disconnected interpretations."
+          description="The preview shows how the product combines signal confidence, path divergence, judge notes, and next guidance in one replayable interface."
         />
         <div className="mt-10">
           <DashboardPreview />
@@ -266,7 +266,7 @@ export default function HomePage() {
         <SectionHeading
           eyebrow="Workflow"
           title="Assess -&gt; Simulate -&gt; Act"
-          description="不是先做产品再找解释，而是先做判断，再跑世界线，最后把资源压到最有胜率的动作上。"
+          description="Do not jump from raw symbolism to conclusions. First structure the signal, then inspect the branches, then decide what deserves action."
         />
         <div className="mt-10 grid gap-6 lg:grid-cols-3">
           {workflow.map((item, index) => (
@@ -290,8 +290,8 @@ export default function HomePage() {
       <section id="audience" className="mx-auto max-w-7xl px-6 py-20 md:px-8">
         <SectionHeading
           eyebrow="Built For"
-          title="为需要快速判断、快速验证、快速止损的人而设计。"
-          description="如果你没有大公司预算，也没有长周期容错空间，你更需要的是一个决策操作系统，而不是一个只会陪你聊天的框。"
+          title="Made for readers who want structure, replay, and comparison."
+          description="If a decision feels symbolically dense or timing-sensitive, this system is designed to slow interpretation down and make the branches legible."
         />
         <div className="mt-10 grid gap-6 lg:grid-cols-3">
           {audiences.map((item) => (
@@ -318,15 +318,15 @@ export default function HomePage() {
                   Ready to Start
                 </div>
                 <h2 className="mt-5 max-w-3xl text-balance text-4xl font-semibold tracking-[-0.06em] text-white md:text-5xl">
-                  把你的创业想法放进系统，先判断，再仿真，再行动。
+                  Put the question into the system. Assess it. Simulate it. Replay it.
                 </h2>
                 <p className="mt-4 max-w-2xl text-lg leading-8 text-slate-300">
-                  从第一条证据开始建立结构化判断，让每一步资源投入都更像计算，而不是赌运气。
+                  The goal is not to force certainty. The goal is to compare possible paths with more discipline than instinct alone can provide.
                 </p>
               </div>
               <div className="flex flex-col gap-4 sm:flex-row lg:flex-col lg:items-end">
                 <Link href="/intake" className={buttonVariants({ size: "lg" })}>
-                  Create First Project
+                  Create First Scenario
                   <ArrowRight className="h-4 w-4" />
                 </Link>
                 <Link href="#workflow" className={buttonVariants({ size: "lg", variant: "secondary" })}>

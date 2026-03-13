@@ -22,63 +22,63 @@ export type Insight = {
 };
 
 export const survivalCurve: SurvivalPoint[] = [
-  { month: "M1", survival: 100 },
-  { month: "M2", survival: 94 },
-  { month: "M3", survival: 87 },
-  { month: "M4", survival: 82 },
-  { month: "M5", survival: 76 },
-  { month: "M6", survival: 69 },
-  { month: "M7", survival: 61 },
-  { month: "M8", survival: 55 },
-  { month: "M9", survival: 48 },
-  { month: "M10", survival: 42 },
-  { month: "M11", survival: 37 },
-  { month: "M12", survival: 33 },
+  { month: "P1", survival: 100 },
+  { month: "P2", survival: 95 },
+  { month: "P3", survival: 90 },
+  { month: "P4", survival: 84 },
+  { month: "P5", survival: 77 },
+  { month: "P6", survival: 71 },
+  { month: "P7", survival: 64 },
+  { month: "P8", survival: 58 },
+  { month: "P9", survival: 52 },
+  { month: "P10", survival: 47 },
+  { month: "P11", survival: 41 },
+  { month: "P12", survival: 36 },
 ];
 
 export const companyDistribution: CompanyDistributionPoint[] = [
-  { archetype: "Builder", wins: 17 },
-  { archetype: "Seller", wins: 22 },
-  { archetype: "Analyst", wins: 14 },
-  { archetype: "Operator", wins: 20 },
-  { archetype: "Hybrid", wins: 27 },
+  { archetype: "Saturnian", wins: 19 },
+  { archetype: "Lunar", wins: 16 },
+  { archetype: "Martian", wins: 21 },
+  { archetype: "Venusian", wins: 18 },
+  { archetype: "Mercurial", wins: 26 },
 ];
 
 export const trajectoryMetrics: TrajectoryMetric[] = [
   {
-    label: "12-mo survivors",
-    value: "33 / 100",
-    caption: "Companies still alive after 12 heartbeat cycles",
-    delta: "+6 vs broad launch",
+    label: "Stable paths",
+    value: "36 / 100",
+    caption: "Worldlines that stay coherent through 12 replay phases",
+    delta: "+8 vs single-read baseline",
   },
   {
-    label: "Median payback",
-    value: "4.5 mo",
-    caption: "After pricing and ICP tightening",
-    delta: "-1.2 mo",
+    label: "Signal confidence",
+    value: "0.79",
+    caption: "After contradiction mapping and branch replay",
+    delta: "+0.11",
   },
   {
     label: "Best path",
-    value: "Niche wedge",
-    caption: "Vertical-first GTM beats broad feature expansion",
+    value: "Slow read",
+    caption: "Layered interpretation beats impulsive conclusion",
     delta: "top leverage",
   },
 ];
 
 export const topInsights: Insight[] = [
   {
-    title: "The best upside appears in a narrow ICP with high pain and low onboarding complexity.",
+    title: "The strongest paths appear when symbolic contradictions are mapped before judgment begins.",
     tag: "leverage",
-    body: "The highest-survival paths do not start broad. They start with a sharper wedge, cleaner pricing, and a lower delivery burden per customer.",
+    body: "The best branches do not rush to certainty. They keep multiple tensions visible long enough for the replay to separate noise from pattern.",
   },
   {
-    title: "Feature expansion destroys runway faster than CAC in the first quarter.",
+    title: "Single-signal overreaction collapses path quality faster than low confidence alone.",
     tag: "risk",
-    body: "Most failed runs overbuilt before price clarity. The simulation consistently rewards willingness-to-pay proof before product surface area increases.",
+    body: "Most failed worldlines over-privilege one transit, one symbol, or one emotional interpretation before the wider field is compared.",
   },
   {
-    title: "Founder archetype matters, but heartbeat discipline matters more.",
+    title: "Replay discipline matters more than dramatic symbolism.",
     tag: "signal",
-    body: "Monthly experiment cadence, budget discipline, and controlled scope beat charisma once cash, delivery, and fatigue constraints begin compounding.",
+    body: "The most stable outcomes come from readers who compare branches, test timing assumptions, and let the judge layer slow the decision down.",
   },
 ];

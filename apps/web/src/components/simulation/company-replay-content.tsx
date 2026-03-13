@@ -24,7 +24,7 @@ export function CompanyReplayContent({ replay }: CompanyReplayContentProps) {
     <div className="space-y-4">
       <PageHeader
         eyebrow="Worldline Replay"
-        title={`${company.name}: replay one startup trajectory across 12 constrained months.`}
+        title={`${company.name}: replay one worldline trajectory across 12 constrained phases.`}
         description={replay.finalNarrative}
         badge={`${replay.finalOutcome} outcome`}
         badgeTone={endStateTone}
@@ -132,7 +132,7 @@ export function CompanyReplayContent({ replay }: CompanyReplayContentProps) {
       <SectionCard
         eyebrow="Monthly State"
         title="Cash, revenue, and founder energy through the replay"
-        description="This chart shows the startup as a state machine over time. Money, traction, and human energy move together, not separately."
+        description="This chart shows the worldline as a state machine over time. Resources, momentum, and human energy move together, not separately."
         className="border-white/10 bg-[linear-gradient(180deg,rgba(15,23,42,0.76),rgba(2,6,23,0.92))]"
       >
         <WorldlineMetricsChart data={company.timeline} />
@@ -177,7 +177,7 @@ export function CompanyReplayContent({ replay }: CompanyReplayContentProps) {
         </div>
         <div className="mt-3 text-sm leading-6 text-slate-300">
           The replay makes one worldline legible. The planner layer turns that insight into concrete next actions,
-          metrics, and stop-loss rules for the real startup.
+          metrics, and stop-loss rules for the real scenario.
         </div>
         <Link href="/planner" className={buttonVariants({ size: "lg" }) + " mt-6"}>
           Open Planner Layer

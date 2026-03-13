@@ -221,8 +221,8 @@ export function IntakeWorkbench() {
     <div className="space-y-4">
       <PageHeader
         eyebrow="Project Intake"
-        title="Translate the startup idea into a structured decision input."
-        description="This intake is designed like a strategic workbench, not a dead admin form. Capture the market thesis, business model, founder reality, and validation signal in a format the engine can score and simulate later."
+        title="Translate the product thesis into a structured simulation input."
+        description="This intake is designed like a scenario workbench, not a dead admin form. Capture the thesis, audience, business model, execution reality, and validation signal in a format the engine can score and simulate later."
         badge={`${progress}% signal readiness`}
         actions={
           <>
@@ -232,7 +232,7 @@ export function IntakeWorkbench() {
             </Button>
             <Button size="lg" onClick={handleSubmit} disabled={submitting}>
               {submitting ? <CircleDashed className="h-4 w-4 animate-spin" /> : <ArrowRight className="h-4 w-4" />}
-              {submitting ? "Submitting" : "Submit to Decision Engine"}
+              {submitting ? "Submitting" : "Submit to Simulator"}
             </Button>
           </>
         }
@@ -296,7 +296,7 @@ export function IntakeWorkbench() {
               <Input
                 value={draft.projectName}
                 onChange={(event) => updateField("projectName", event.target.value)}
-                placeholder="Decision Intelligence OS"
+                placeholder="Astrological Decision Simulator"
               />
             </IntakeField>
 

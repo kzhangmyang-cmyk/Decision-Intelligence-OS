@@ -2,7 +2,7 @@ import { ArrowUpRight, BrainCircuit, Gauge, Orbit, Radar, Sparkles } from "lucid
 
 import { Card } from "@/components/ui/card";
 
-const scoreBars = [82, 67, 75, 91, 58];
+const scoreBars = [81, 69, 76, 88, 61];
 
 export function HeroCommandCenter() {
   return (
@@ -19,27 +19,27 @@ export function HeroCommandCenter() {
             <div>
               <div className="text-xs uppercase tracking-[0.3em] text-cyan-200/70">Worldline Control</div>
               <div className="mt-2 text-2xl font-semibold tracking-[-0.04em] text-white">
-                Decision Intelligence OS
+                Astrological Decision Simulator
               </div>
             </div>
             <div className="rounded-full border border-emerald-300/20 bg-emerald-300/10 px-3 py-1 text-xs font-medium text-emerald-200">
-              Assess + Simulate
+              Symbolic Replay
             </div>
           </div>
 
           <div className="grid gap-4 md:grid-cols-[1.4fr,0.9fr]">
             <div className="rounded-[24px] border border-white/10 bg-white/[0.03] p-4">
               <div className="flex items-center justify-between text-xs uppercase tracking-[0.26em] text-slate-400">
-                <span>Feasibility Matrix</span>
+                <span>Signal Matrix</span>
                 <BrainCircuit className="h-4 w-4 text-cyan-200" />
               </div>
               <div className="mt-5 flex items-end gap-3">
                 <div>
-                  <div className="text-5xl font-semibold tracking-[-0.08em] text-white">78</div>
-                  <div className="mt-1 text-sm text-slate-400">Signal-adjusted viability score</div>
+                  <div className="text-5xl font-semibold tracking-[-0.08em] text-white">79</div>
+                  <div className="mt-1 text-sm text-slate-400">Composite signal confidence</div>
                 </div>
                 <div className="mb-2 rounded-full border border-cyan-300/20 bg-cyan-300/10 px-3 py-1 text-xs text-cyan-100">
-                  confidence 0.74
+                  timing 0.72
                 </div>
               </div>
 
@@ -62,23 +62,23 @@ export function HeroCommandCenter() {
               <div className="rounded-[24px] border border-white/10 bg-white/[0.03] p-4">
                 <div className="flex items-center justify-between">
                   <div>
-                    <div className="text-xs uppercase tracking-[0.24em] text-slate-400">100 Companies</div>
-                    <div className="mt-2 text-3xl font-semibold tracking-[-0.06em] text-white">12 mo</div>
+                    <div className="text-xs uppercase tracking-[0.24em] text-slate-400">100 Worldlines</div>
+                    <div className="mt-2 text-3xl font-semibold tracking-[-0.06em] text-white">12 phases</div>
                   </div>
                   <Orbit className="h-5 w-5 text-cyan-200" />
                 </div>
                 <div className="mt-4 space-y-3 text-sm text-slate-300">
                   <div className="flex items-center justify-between">
-                    <span>Org chart</span>
-                    <span className="font-mono text-cyan-200">5 fixed agents</span>
+                    <span>Signal clusters</span>
+                    <span className="font-mono text-cyan-200">5 layers</span>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span>Heartbeat</span>
-                    <span className="font-mono text-cyan-200">monthly</span>
+                    <span>Replay mode</span>
+                    <span className="font-mono text-cyan-200">phase-driven</span>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span>Budget model</span>
-                    <span className="font-mono text-cyan-200">runway constrained</span>
+                    <span>Judge layer</span>
+                    <span className="font-mono text-cyan-200">active</span>
                   </div>
                 </div>
               </div>
@@ -92,16 +92,16 @@ export function HeroCommandCenter() {
                   <div className="flex items-start gap-3 rounded-2xl border border-cyan-300/12 bg-cyan-300/8 p-3">
                     <Gauge className="mt-0.5 h-4 w-4 text-cyan-200" />
                     <div>
-                      <div className="font-medium text-white">Validate pricing and ICP before feature expansion</div>
+                      <div className="font-medium text-white">Pause before acting on the first dramatic signal</div>
                       <div className="mt-1 text-slate-400">
-                        Highest leverage move from constrained worldline outcomes
+                        Highest leverage move from the replayed worldline field
                       </div>
                     </div>
                   </div>
                   <div className="flex items-center justify-between text-xs text-slate-400">
                     <span>Top judge verdict</span>
                     <span className="inline-flex items-center gap-1 text-cyan-200">
-                      go narrow, not broad
+                      compare branches first
                       <ArrowUpRight className="h-3 w-3" />
                     </span>
                   </div>
@@ -112,9 +112,9 @@ export function HeroCommandCenter() {
 
           <div className="grid gap-3 md:grid-cols-3">
             {[
-              { label: "Assess", icon: Radar, value: "Evidence, sufficiency, confidence" },
-              { label: "Simulate", icon: Orbit, value: "100 constrained worldlines" },
-              { label: "Act", icon: Gauge, value: "Experiments, metrics, stop-loss" },
+              { label: "Assess", icon: Radar, value: "Signals, tension, confidence" },
+              { label: "Simulate", icon: Orbit, value: "100 symbolic worldlines" },
+              { label: "Act", icon: Gauge, value: "Timing notes, next moves" },
             ].map((item) => (
               <div
                 key={item.label}

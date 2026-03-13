@@ -18,9 +18,9 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Decision Intelligence OS",
+  title: "Astrological Decision Simulator",
   description:
-    "Assess startup ideas, simulate 100 virtual companies, and turn uncertainty into experiments and execution plans.",
+    "Assess symbolic scenarios, simulate 100 worldlines, and turn uncertainty into replayable action paths.",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
