@@ -153,11 +153,11 @@ $graphics.DrawString(
 )
 
 $chipX = 84
-$chipX += Draw-Chip -Graphics $graphics -Text "MiroFish" -X $chipX -Y 380 -Font $chipFont
+$chipX += Draw-Chip -Graphics $graphics -Text "World Model" -X $chipX -Y 380 -Font $chipFont
 $chipX += 12
-$chipX += Draw-Chip -Graphics $graphics -Text "Paperclip" -X $chipX -Y 380 -Font $chipFont
+$chipX += Draw-Chip -Graphics $graphics -Text "Control Plane" -X $chipX -Y 380 -Font $chipFont
 $chipX += 12
-[void](Draw-Chip -Graphics $graphics -Text "OS2.0" -X $chipX -Y 380 -Font $chipFont)
+[void](Draw-Chip -Graphics $graphics -Text "Decision Core" -X $chipX -Y 380 -Font $chipFont)
 
 $loopCards = @(
   @{ X = 84;  Title = "Assess";   Body = "score" },

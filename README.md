@@ -38,11 +38,11 @@ It is a constrained decision system that answers three questions in order:
 
 ## Architecture At A Glance
 
-This repository combines three product ideas into one system:
+This repository combines three internal architecture layers into one system:
 
-- `MiroFish`: world modeling -> role generation -> simulation -> report
-- `Paperclip`: org chart, heartbeat scheduling, budget constraints, audit logs, multi-company isolation
-- `OS2.0`: decision engine, scoring, data sufficiency, confidence, feedback loop, Next Best Experiment
+- `World Model`: world modeling -> role generation -> simulation -> report
+- `Control Plane`: org chart, heartbeat scheduling, budget constraints, audit logs, multi-company isolation
+- `Decision Core`: decision engine, scoring, data sufficiency, confidence, feedback loop, Next Best Experiment
 
 The core differentiation is `100 parallel virtual company simulations` for the same startup idea under hard business constraints.
 
